@@ -25,4 +25,5 @@ public abstract class BasePage {
         password.sendKeys(ConfigurationReader.getProperty("password"));
         loginBtn.click();
     }
+
 }
