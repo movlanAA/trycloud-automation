@@ -13,16 +13,29 @@ public class US9_Page {
 //    @FindBy(xpath = "//ul[@id='appmenu']//a[@aria-label='Dashboard']//*[name()='svg']//*[name()='image' and contains(@class,'app-icon')]")
 //    public WebElement dashboardPage;
 
-    @FindBy(xpath = "//ul[@id='appmenu']//a[@aria-label='Files']//*[name()='svg']//*[name()='image' and contains(@class,'app-icon')]")
+    @FindBy(xpath = "//a[@aria-label='Files']")
     public WebElement fileModules;
 
-    @FindBy(xpath = "(//a[@class='action action-menu permanent'])[1]")
+    @FindBy(xpath = "//a[@class='icon icon-more']")
     public WebElement actionIcon;
+    //(//span[@class='icon icon-more'])[1]
+    //(//a[@class='action action-menu permanent'])[1]
 
-    @FindBy(xpath = "//li[@class=' action-details-container']")
+    @FindBy(xpath = "a[@class='menuitem action action-details permanent']")
     public WebElement detailOptions;
+    //a[@class='menuitem action action-details permanent']
+    //li[@class=' action-details-container']
+
 
     @FindBy(xpath ="//span[@class='app-sidebar-tabs__tab-icon icon-comment']" )
     public WebElement postMessage;
+
+
+    @FindBy(xpath = "//div[@contenteditable='true']")
+    public WebElement message;
+
+
+    @FindBy(xpath = "//input[@class='submit icon-confirm has-tooltip']")
+    public WebElement submitButton;
 }
 
