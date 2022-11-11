@@ -11,7 +11,7 @@ public class US9_Page {
     }
 
 //    @FindBy(xpath = "//ul[@id='appmenu']//a[@aria-label='Dashboard']//*[name()='svg']//*[name()='image' and contains(@class,'app-icon')]")
-//    public WebElement dashboardPage;
+//    public WebElement dashboardPage; //
 
     @FindBy(xpath = "//a[@aria-label='Files']")
     public WebElement fileModules;
