@@ -1,4 +1,4 @@
-@wip @login
+@login
 Feature: As a user, I should be able to log in.
 
   Scenario Outline: Verify login with valid credentials
@@ -12,3 +12,6 @@ Feature: As a user, I should be able to log in.
       | user7    | Userpass123 |
       | user34   | Userpass123 |
       | user99   | Userpass123 |
+
+
+
